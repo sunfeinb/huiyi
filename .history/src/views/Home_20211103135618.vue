@@ -1,0 +1,57 @@
+<template>
+  <div>
+          <el-main style="padding:0px">
+        <!-- 轮播图 -->
+        <div class="carousel">
+          <el-carousel style="height:85vh">
+            <el-carousel-item v-for="item in list" :key="item.value" style="height:100%">
+              <img :src="item.name" style="width:100%;height:100%" />
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+      </el-main>
+      <div>
+        13ghajhkjl
+      </div>
+  </div>
+</template>
+
+<script>
+import one from "../assets/VCG211247746810.jpg";
+import tow from "../assets/VCG211241875295.jpg";
+import three from "../assets/VCG41N1124651573.jpg";
+import four from "../assets/VCG211149762808-YKW.jpg";
+export default {
+  name: '',
+  props:{},
+  data () {
+    return {
+            list: [
+        {
+          name: one
+        },
+        {
+          name: tow
+        },
+        {
+          name: three
+        },
+        {
+          name: four
+        }
+      ]
+    }
+  },
+  components: {},
+  methods: {},
+  mounted() {},
+  computed: {},
+  watch: {}
+}
+</script>
+
+<style lang='scss' scoped>
+.el-carousel{
+  height: 280px;
+}
+</style>
